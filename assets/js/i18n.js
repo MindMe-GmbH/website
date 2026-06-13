@@ -21,11 +21,11 @@ const EN = {
 
   "caps.eyebrow":   "Inside the device",
   "caps.brain.t":   "Cognitive games",
-  "caps.brain.d":   "Advanced activities developed to rigorous scientific standards, refined over more than a decade of research.",
+  "caps.brain.d":   "Advanced activities developed to rigorous scientific standards, refined over more than a decade of research with primates.",
   "caps.track.t":   "Performance tracking",
   "caps.track.d":   "Every session is recorded, so you can follow your dog's progress and wellbeing over time.",
   "caps.self.t":    "Independent play",
-  "caps.self.d":    "Your dog plays whenever they like, at their own pace, with no training or handler needed.",
+  "caps.self.d":    "Adaptive games your dog plays whenever they like, at their own pace, with no training or handler needed.",
 
   "about.tag": "Lola in action",
 
@@ -38,16 +38,16 @@ const EN = {
 
   "concept.eyebrow": "The concept",
   "concept.title":   "Felix explains the idea",
-  "concept.lead":    "Grab a coffee and let Felix walk you through the thinking behind MindMe! in a few minutes.",
+  "concept.lead":    "Grab a coffee and let Felix walk you through the thinking behind MindMe!.",
   "concept.note":    "Video narration is in German for now.",
 
   "team.eyebrow": "The team",
   "team.title":   "Built by neuroscience",
   "team.anto.name": "Antonino Calapai",
-  "team.anto.role": "Cofounder · Neuroscientist",
+  "team.anto.role": "Cofounder",
   "team.anto.bio":  "Neuroscientist specialising in autonomous systems for cognitive and behavioural science.",
   "team.felix.name": "Felix Schneider",
-  "team.felix.role": "Cofounder · Neuroscientist",
+  "team.felix.role": "Cofounder",
   "team.felix.bio":  "Neuroscientist specialising in social decision making and sensory processing for cognitive and behavioural science.",
 
   "contact.eyebrow":  "Contact",
@@ -65,6 +65,7 @@ const EN = {
   "footer.impressum": "Impressum",
   "footer.privacy":   "Privacy policy",
   "footer.rights":    "Germany 2026",
+  "footer.totop":     "Back to top",
 };
 
 const DE = Object.assign({}, EN, {
@@ -81,11 +82,11 @@ const DE = Object.assign({}, EN, {
 
   "caps.eyebrow":   "Das Gerät",
   "caps.brain.t":   "Kognitive Spiele",
-  "caps.brain.d":   "Anspruchsvolle Aktivitäten nach strengen wissenschaftlichen Standards, verfeinert über mehr als ein Jahrzehnt Forschung.",
+  "caps.brain.d":   "Anspruchsvolle Aktivitäten nach strengen wissenschaftlichen Standards, verfeinert über mehr als ein Jahrzehnt Forschung mit Primaten.",
   "caps.track.t":   "Fortschrittskontrolle",
   "caps.track.d":   "Jede Sitzung wird aufgezeichnet, sodass du die Fortschritte und das Wohlbefinden deines Hundes über die Zeit verfolgen kannst.",
   "caps.self.t":    "Eigenständiges Spielen",
-  "caps.self.d":    "Dein Hund spielt wann immer er möchte, in seinem eigenen Tempo, ganz ohne Training oder Betreuung.",
+  "caps.self.d":    "Adaptive Spiele, die dein Hund spielt wann immer er möchte, in seinem eigenen Tempo, ganz ohne Training oder Betreuung.",
 
   "about.tag": "Lola in Aktion",
 
@@ -98,14 +99,14 @@ const DE = Object.assign({}, EN, {
 
   "concept.eyebrow": "Das Konzept",
   "concept.title":   "Felix erklärt die Idee",
-  "concept.lead":    "Hol dir einen Kaffee und lass dir von Felix in wenigen Minuten den Gedanken hinter MindMe! erklären.",
+  "concept.lead":    "Hol dir einen Kaffee und lass dir von Felix den Gedanken hinter MindMe! erklären.",
   "concept.note":    "Die Videovertonung ist vorerst nur auf Deutsch.",
 
   "team.eyebrow": "Das Team",
   "team.title":   "Auf Neurowissenschaft gebaut",
-  "team.anto.role": "Mitgründer · Neurowissenschaftler",
+  "team.anto.role": "Mitgründer",
   "team.anto.bio":  "Neurowissenschaftler mit Schwerpunkt auf autonomen Systemen für die kognitive und verhaltensbezogene Forschung.",
-  "team.felix.role": "Mitgründer · Neurowissenschaftler",
+  "team.felix.role": "Mitgründer",
   "team.felix.bio":  "Neurowissenschaftler mit Schwerpunkt auf sozialer Entscheidungsfindung und sensorischer Verarbeitung für die kognitive und verhaltensbezogene Forschung.",
 
   "contact.eyebrow":  "Kontakt",
@@ -123,6 +124,7 @@ const DE = Object.assign({}, EN, {
   "footer.impressum": "Impressum",
   "footer.privacy":   "Datenschutz",
   "footer.rights":    "Deutschland 2026",
+  "footer.totop":     "Nach oben",
 });
 
 const IT = Object.assign({}, EN, {
@@ -139,11 +141,11 @@ const IT = Object.assign({}, EN, {
 
   "caps.eyebrow":   "Il dispositivo",
   "caps.brain.t":   "Giochi cognitivi",
-  "caps.brain.d":   "Attività avanzate sviluppate secondo rigorosi standard scientifici, perfezionate in oltre un decennio di ricerca.",
+  "caps.brain.d":   "Attività avanzate sviluppate secondo rigorosi standard scientifici, perfezionate in oltre un decennio di ricerca sui primati.",
   "caps.track.t":   "Monitoraggio dei progressi",
   "caps.track.d":   "Ogni sessione viene registrata, così puoi seguire i progressi e il benessere del tuo cane nel tempo.",
   "caps.self.t":    "Gioco autonomo",
-  "caps.self.d":    "Il tuo cane gioca quando vuole, al proprio ritmo, senza bisogno di addestramento o supervisione.",
+  "caps.self.d":    "Giochi adattivi a cui il tuo cane gioca quando vuole, al proprio ritmo, senza bisogno di addestramento o supervisione.",
 
   "about.tag": "Lola in azione",
 
@@ -156,14 +158,14 @@ const IT = Object.assign({}, EN, {
 
   "concept.eyebrow": "Il concetto",
   "concept.title":   "Felix spiega l'idea",
-  "concept.lead":    "Prendi un caffè e lascia che Felix ti illustri in pochi minuti l'idea dietro MindMe!.",
+  "concept.lead":    "Prendi un caffè e lascia che Felix ti illustri l'idea dietro MindMe!.",
   "concept.note":    "La narrazione del video è per ora solo in tedesco.",
 
   "team.eyebrow": "Il team",
   "team.title":   "Costruito dalle neuroscienze",
-  "team.anto.role": "Cofondatore · Neuroscienziato",
+  "team.anto.role": "Cofondatore",
   "team.anto.bio":  "Neuroscienziato specializzato in sistemi autonomi per la ricerca cognitiva e comportamentale.",
-  "team.felix.role": "Cofondatore · Neuroscienziato",
+  "team.felix.role": "Cofondatore",
   "team.felix.bio":  "Neuroscienziato specializzato nel processo decisionale sociale e nell'elaborazione sensoriale per la ricerca cognitiva e comportamentale.",
 
   "contact.eyebrow":  "Contatti",
@@ -181,6 +183,7 @@ const IT = Object.assign({}, EN, {
   "footer.impressum": "Note legali",
   "footer.privacy":   "Privacy",
   "footer.rights":    "Germania 2026",
+  "footer.totop":     "Torna su",
 });
 
 const I18N = { en: EN, de: DE, it: IT };

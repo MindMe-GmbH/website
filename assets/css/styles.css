@@ -187,14 +187,15 @@ p { margin: 0; }
 .device-figure { text-align: center; }
 .device-figure img { margin-inline: auto; max-width: 900px; width: 100%; }
 
-/* bring the hero and the device section closer together */
-#about { padding-top: clamp(36px, 5vw, 72px); }
+/* bring the device up closer to the top of the section */
+#about { padding-top: clamp(8px, 2vw, 24px); }
 
-/* MindMe logo below "Get in touch" */
-.contact__logo { width: 170px; max-width: 55%; height: auto; margin-top: 30px; }
+/* MindMe logo below "Get in touch", centred in the column */
+.contact__aside picture { display: block; }
+.contact__logo { display: block; width: 255px; max-width: 80%; height: auto; margin: 32px auto 0; }
 
 /* capabilities strip on dark */
-.caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: clamp(44px, 6vw, 80px); }
+.caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: clamp(28px, 4vw, 52px); }
 .cap { text-align: left; }
 .cap__icon { height: clamp(80px, 8vw, 104px); width: auto; margin-bottom: 20px; }
 .cap h3 { font-size: var(--t-h3); color: var(--paper); margin-bottom: 8px; }
@@ -208,7 +209,7 @@ p { margin: 0; }
    ========================================================================= */
 .beta { background: var(--yellow); color: var(--ink); position: relative; overflow: hidden; }
 .beta__inner { display: flex; align-items: center; gap: clamp(24px, 4vw, 56px); flex-wrap: wrap; }
-.beta__paw { width: 92px; image-rendering: pixelated; flex: none; }
+.beta__paw { width: 138px; image-rendering: pixelated; flex: none; }
 .beta__text { flex: 1; min-width: 260px; }
 .beta__text h2 { font-size: var(--t-h2); }
 .beta__text p { margin-top: 10px; max-width: 52ch; }
@@ -293,7 +294,11 @@ p { margin: 0; }
 /* =========================================================================
    FOOTER
    ========================================================================= */
-.footer { background: var(--ink); color: var(--muted-on-dark); padding-block: 48px; font-size: var(--t-small); }
+.footer { background: var(--ink); color: var(--muted-on-dark); padding-block: 40px; font-size: var(--t-small); }
+.footer__bar { display: flex; justify-content: space-between; align-items: center; gap: 16px 28px; flex-wrap: wrap; }
+.footer__totop { color: var(--muted-on-dark); text-decoration: none; font-weight: 600; }
+.footer__totop::after { content: " ↑"; }
+.footer__totop:hover { color: var(--yellow); }
 .footer__top { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
 .footer__brand { display: inline-flex; align-items: center; color: var(--paper); font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; }
 .footer__gh { color: var(--muted-on-dark); display: inline-flex; transition: color .15s var(--ease); }
