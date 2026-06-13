@@ -1,0 +1,12 @@
+# Source assets (working originals — kept locally, NOT served).
+# Contains Video_presentation_concept.mp4 (122 MB) which exceeds GitHub's 100 MB
+# limit. Only the optimised /assets tree is committed and served.
+MindMeWebsite_assets/
+
+# Python / IDE
+.venv/
+.idea/
+__pycache__/
+
+# OS
+.DS_Store
