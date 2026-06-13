@@ -1,132 +1,186 @@
 /* =========================================================================
-   MindMe! — i18n dictionaries
-   -------------------------------------------------------------------------
-   EN  = real placeholder copy (English is needed anyway; refine before launch).
-   DE / IT inherit EN, then override only the CHROME (nav, buttons, form
-   labels, footer) with confident standard UI terms.
-   >>> BODY COPY in DE / IT is intentionally left as the English fallback. <<<
-   Antonino supplies native German (tightened) and Italian (written natively).
-   A "translation pending" notice bar (see index.html) shows while DE/IT body
-   copy is outstanding — DO NOT machine-translate the body strings here.
-   Strings ending in keys listed in I18N_HTML may contain inline markup.
+   MindMe! — i18n dictionaries (EN / DE / IT)
+   Full translations for all three languages. DE/IT written for review by
+   Antonino (native IT, fluent DE) — adjust nuance as needed.
+   Keys in I18N_HTML may contain inline markup and are set via innerHTML.
    ========================================================================= */
 
-const I18N_HTML = new Set(["hero.title"]);   // keys rendered as HTML, not text
+const I18N_HTML = new Set(["hero.title"]);
 
 const EN = {
   "nav.about":   "About",
-  "nav.concept": "Concept",
+  "nav.beta":    "Beta",
   "nav.team":    "Team",
+  "nav.concept": "Concept",
   "nav.contact": "Contact",
 
   "hero.title":  'Cognitive Enrichment for <span class="accent">Dogs</span>',
-  "hero.sub":    "A touchscreen-based, adaptive cognitive stimulation built on more than a decade of neuroscience research.",
+  "hero.sub":    "A touchscreen platform for adaptive cognitive stimulation, built on more than a decade of neuroscience research.",
   "hero.cta1":   "Watch the concept",
   "hero.cta2":   "Contact us",
-
-  "about.eyebrow": "What MindMe! is",
-  "about.title":   "Rigorous science, on a screen an animal actually wants to use.",
-  "about.p1":      "MindMe! is a touchscreen-based cognitive enrichment and behavioural platform. It turns rigorous neuroscience into self-paced, screen-based tasks that animals engage with on their own terms.",
-  "about.p2":      "Built for the home and the lab alike, the device pairs a waterproof touchscreen with an integrated feeder and adaptive software that meets each individual where they are — and tracks how they progress.",
-  "about.tag":     "Lola, in action",
 
   "caps.eyebrow":   "Inside the device",
   "caps.brain.t":   "Cognitive games",
   "caps.brain.d":   "Advanced activities developed to rigorous scientific standards, refined over more than a decade of research.",
   "caps.track.t":   "Performance tracking",
-  "caps.track.d":   "Every session is recorded, so you can follow your dog's progress and well-being over time.",
-  "caps.self.t":    "Self-paced interaction",
-  "caps.self.d":    "Your dog plays whenever they like, at their own pace — no training or handler needed.",
-  "caps.figure":    "One device: waterproof touchscreen, integrated feeder, AI monitoring — fully customisable.",
+  "caps.track.d":   "Every session is recorded, so you can follow your dog's progress and wellbeing over time.",
+  "caps.self.t":    "Independent play",
+  "caps.self.d":    "Your dog plays whenever they like, at their own pace, with no training or handler needed.",
 
-  "beta.badge": "Current wave full",
+  "about.tag": "Lola in action",
+
   "beta.title": "Become a beta tester.",
-  "beta.p":     "Our current beta wave has reached capacity. Leave your email to reserve a place in the next wave — we'll be in touch when spots open.",
-  "beta.full":  "Beta full — applications closed",
+  "beta.p":     "Our current beta wave is full. Leave your email to reserve a place in the next wave and we'll be in touch when spots open.",
+  "beta.full":  "Beta applications closed",
   "beta.wl_label": "Reserve a spot for the next wave",
   "beta.wl_btn":   "Reserve my spot",
-  "beta.wl_ok":    "Thanks — opening your email app to reserve your spot.",
+  "beta.wl_ok":    "Thanks, opening your email app to reserve your spot.",
 
-  "concept.eyebrow":     "The concept",
-  "concept.title":       "Watch Felix explain the idea.",
-  "concept.lead":        "Grab a coffee and let Felix walk you through the thinking behind MindMe! in a few minutes.",
-  "concept.placeholder": "Concept video goes here — add a YouTube or Vimeo ID to the data-embed attribute in index.html to activate it.",
+  "concept.eyebrow": "The concept",
+  "concept.title":   "Felix explains the idea",
+  "concept.lead":    "Grab a coffee and let Felix walk you through the thinking behind MindMe! in a few minutes.",
+  "concept.note":    "Video narration is in German for now.",
 
   "team.eyebrow": "The team",
-  "team.title":   "Built by neuroscientists.",
-  "team.lead":    "Two researchers building the platform they wished existed.",
+  "team.title":   "Built by neuroscience",
   "team.anto.name": "Antonino Calapai",
-  "team.anto.role": "Co-founder · Neuroscientist",
+  "team.anto.role": "Cofounder · Neuroscientist",
   "team.anto.bio":  "Neuroscientist specialising in autonomous systems for cognitive and behavioural science.",
   "team.felix.name": "Felix Schneider",
-  "team.felix.role": "Co-founder · Neuroscientist",
-  "team.felix.bio":  "Neuroscientist specialising in social decision-making and sensory processing for cognitive and behavioural science.",
+  "team.felix.role": "Cofounder · Neuroscientist",
+  "team.felix.bio":  "Neuroscientist specialising in social decision making and sensory processing for cognitive and behavioural science.",
 
   "contact.eyebrow":  "Contact",
-  "contact.title":    "Get in touch.",
+  "contact.title":    "Get in touch",
   "contact.lead":     "Questions, partnerships, or press? Send us a note and we'll get back to you.",
   "contact.name":     "Name",
   "contact.email":    "Email",
   "contact.message":  "Message",
   "contact.send":     "Send message",
   "contact.privacy":  "Your details are stored securely and used only to respond to your message. A full privacy policy will follow.",
-  "contact.aside_t":  "Prefer email?",
-  "contact.aside_p":  "Reach the founders directly:",
-  "contact.ok":       "Thanks — your message is on its way.",
+  "contact.ok":       "Thanks, your message is on its way.",
   "contact.err":      "Something went wrong. Please email us instead.",
-  "contact.mailto":   "Opening your email app — just press send to finish.",
+  "contact.mailto":   "Opening your email app, just press send to finish.",
 
-  "footer.tagline":   "Cognitive Enrichment Platform",
   "footer.impressum": "Impressum",
   "footer.privacy":   "Privacy policy",
-  "footer.rights":    "Germany · 2026",
+  "footer.rights":    "Germany 2026",
 };
 
-/* DE / IT: inherit EN, override chrome only. Body copy stays English (pending). */
 const DE = Object.assign({}, EN, {
-  "nav.about": "Über uns",
+  "nav.about":   "Über uns",
+  "nav.beta":    "Beta",
+  "nav.team":    "Team",
   "nav.concept": "Konzept",
-  "nav.team": "Team",
   "nav.contact": "Kontakt",
-  "hero.cta1": "Konzept ansehen",
-  "hero.cta2": "Kontakt",
-  "beta.badge": "Aktuelle Welle voll",
-  "beta.full": "Beta voll — Anmeldung geschlossen",
-  "beta.wl_label": "Platz für die nächste Welle reservieren",
-  "beta.wl_btn": "Platz reservieren",
-  "beta.wl_ok": "Danke — dein E-Mail-Programm wird geöffnet, um deinen Platz zu reservieren.",
-  "contact.name": "Name",
-  "contact.email": "E-Mail",
-  "contact.message": "Nachricht",
-  "contact.send": "Nachricht senden",
-  "contact.aside_t": "Lieber per E-Mail?",
-  "contact.aside_p": "Wende dich direkt an die Gründer:",
-  "contact.mailto": "Dein E-Mail-Programm wird geöffnet — bitte zum Abschluss auf Senden klicken.",
+
+  "hero.title":  'Kognitive Förderung für <span class="accent">Hunde</span>',
+  "hero.sub":    "Eine Touchscreen Plattform für adaptive kognitive Stimulation, basierend auf über einem Jahrzehnt neurowissenschaftlicher Forschung.",
+  "hero.cta1":   "Konzept ansehen",
+  "hero.cta2":   "Kontakt",
+
+  "caps.eyebrow":   "Das Gerät",
+  "caps.brain.t":   "Kognitive Spiele",
+  "caps.brain.d":   "Anspruchsvolle Aktivitäten nach strengen wissenschaftlichen Standards, verfeinert über mehr als ein Jahrzehnt Forschung.",
+  "caps.track.t":   "Fortschrittskontrolle",
+  "caps.track.d":   "Jede Sitzung wird aufgezeichnet, sodass du die Fortschritte und das Wohlbefinden deines Hundes über die Zeit verfolgen kannst.",
+  "caps.self.t":    "Eigenständiges Spielen",
+  "caps.self.d":    "Dein Hund spielt wann immer er möchte, in seinem eigenen Tempo, ganz ohne Training oder Betreuung.",
+
+  "about.tag": "Lola in Aktion",
+
+  "beta.title": "Werde Beta Tester.",
+  "beta.p":     "Unsere aktuelle Beta Runde ist voll. Hinterlasse deine E-Mail, um einen Platz in der nächsten Runde zu reservieren, und wir melden uns, sobald Plätze frei werden.",
+  "beta.full":  "Beta Anmeldung geschlossen",
+  "beta.wl_label": "Platz für die nächste Runde reservieren",
+  "beta.wl_btn":   "Platz reservieren",
+  "beta.wl_ok":    "Danke, dein Mailprogramm wird geöffnet, um deinen Platz zu reservieren.",
+
+  "concept.eyebrow": "Das Konzept",
+  "concept.title":   "Felix erklärt die Idee",
+  "concept.lead":    "Hol dir einen Kaffee und lass dir von Felix in wenigen Minuten den Gedanken hinter MindMe! erklären.",
+  "concept.note":    "Die Videovertonung ist vorerst nur auf Deutsch.",
+
+  "team.eyebrow": "Das Team",
+  "team.title":   "Auf Neurowissenschaft gebaut",
+  "team.anto.role": "Mitgründer · Neurowissenschaftler",
+  "team.anto.bio":  "Neurowissenschaftler mit Schwerpunkt auf autonomen Systemen für die kognitive und verhaltensbezogene Forschung.",
+  "team.felix.role": "Mitgründer · Neurowissenschaftler",
+  "team.felix.bio":  "Neurowissenschaftler mit Schwerpunkt auf sozialer Entscheidungsfindung und sensorischer Verarbeitung für die kognitive und verhaltensbezogene Forschung.",
+
+  "contact.eyebrow":  "Kontakt",
+  "contact.title":    "Schreib uns",
+  "contact.lead":     "Fragen, Kooperationen oder Presse? Schreib uns eine Nachricht und wir melden uns.",
+  "contact.name":     "Name",
+  "contact.email":    "E-Mail",
+  "contact.message":  "Nachricht",
+  "contact.send":     "Nachricht senden",
+  "contact.privacy":  "Deine Daten werden sicher gespeichert und nur verwendet, um auf deine Nachricht zu antworten. Eine vollständige Datenschutzerklärung folgt.",
+  "contact.ok":       "Danke, deine Nachricht ist unterwegs.",
+  "contact.err":      "Etwas ist schiefgelaufen. Bitte schreib uns stattdessen eine E-Mail.",
+  "contact.mailto":   "Dein Mailprogramm wird geöffnet, bitte zum Abschluss auf Senden klicken.",
+
   "footer.impressum": "Impressum",
-  "footer.privacy": "Datenschutz",
+  "footer.privacy":   "Datenschutz",
+  "footer.rights":    "Deutschland 2026",
 });
 
 const IT = Object.assign({}, EN, {
-  "nav.about": "Chi siamo",
+  "nav.about":   "Chi siamo",
+  "nav.beta":    "Beta",
+  "nav.team":    "Team",
   "nav.concept": "Concetto",
-  "nav.team": "Team",
   "nav.contact": "Contatti",
-  "hero.cta1": "Guarda il concetto",
-  "hero.cta2": "Contattaci",
-  "beta.badge": "Ondata attuale al completo",
-  "beta.full": "Beta al completo — iscrizioni chiuse",
-  "beta.wl_label": "Riserva un posto per la prossima ondata",
-  "beta.wl_btn": "Riserva un posto",
-  "beta.wl_ok": "Grazie — apertura dell'app email per riservare il tuo posto.",
-  "contact.name": "Nome",
-  "contact.email": "Email",
-  "contact.message": "Messaggio",
-  "contact.send": "Invia messaggio",
-  "contact.aside_t": "Preferisci l'email?",
-  "contact.aside_p": "Scrivi direttamente ai fondatori:",
-  "contact.mailto": "Apertura dell'app email — premi invia per completare.",
+
+  "hero.title":  'Arricchimento cognitivo per <span class="accent">cani</span>',
+  "hero.sub":    "Una piattaforma touchscreen per la stimolazione cognitiva adattiva, basata su oltre un decennio di ricerca neuroscientifica.",
+  "hero.cta1":   "Guarda il concetto",
+  "hero.cta2":   "Contattaci",
+
+  "caps.eyebrow":   "Il dispositivo",
+  "caps.brain.t":   "Giochi cognitivi",
+  "caps.brain.d":   "Attività avanzate sviluppate secondo rigorosi standard scientifici, perfezionate in oltre un decennio di ricerca.",
+  "caps.track.t":   "Monitoraggio dei progressi",
+  "caps.track.d":   "Ogni sessione viene registrata, così puoi seguire i progressi e il benessere del tuo cane nel tempo.",
+  "caps.self.t":    "Gioco autonomo",
+  "caps.self.d":    "Il tuo cane gioca quando vuole, al proprio ritmo, senza bisogno di addestramento o supervisione.",
+
+  "about.tag": "Lola in azione",
+
+  "beta.title": "Diventa beta tester.",
+  "beta.p":     "L'attuale fase beta è al completo. Lascia la tua email per riservare un posto nella prossima fase e ti contatteremo quando si libereranno posti.",
+  "beta.full":  "Iscrizioni beta chiuse",
+  "beta.wl_label": "Riserva un posto per la prossima fase",
+  "beta.wl_btn":   "Riserva un posto",
+  "beta.wl_ok":    "Grazie, apertura dell'app email per riservare il tuo posto.",
+
+  "concept.eyebrow": "Il concetto",
+  "concept.title":   "Felix spiega l'idea",
+  "concept.lead":    "Prendi un caffè e lascia che Felix ti illustri in pochi minuti l'idea dietro MindMe!.",
+  "concept.note":    "La narrazione del video è per ora solo in tedesco.",
+
+  "team.eyebrow": "Il team",
+  "team.title":   "Costruito dalle neuroscienze",
+  "team.anto.role": "Cofondatore · Neuroscienziato",
+  "team.anto.bio":  "Neuroscienziato specializzato in sistemi autonomi per la ricerca cognitiva e comportamentale.",
+  "team.felix.role": "Cofondatore · Neuroscienziato",
+  "team.felix.bio":  "Neuroscienziato specializzato nel processo decisionale sociale e nell'elaborazione sensoriale per la ricerca cognitiva e comportamentale.",
+
+  "contact.eyebrow":  "Contatti",
+  "contact.title":    "Mettiti in contatto",
+  "contact.lead":     "Domande, collaborazioni o stampa? Scrivici un messaggio e ti risponderemo.",
+  "contact.name":     "Nome",
+  "contact.email":    "Email",
+  "contact.message":  "Messaggio",
+  "contact.send":     "Invia messaggio",
+  "contact.privacy":  "I tuoi dati sono conservati in modo sicuro e usati solo per risponderti. Seguirà un'informativa completa sulla privacy.",
+  "contact.ok":       "Grazie, il tuo messaggio è in arrivo.",
+  "contact.err":      "Qualcosa è andato storto. Scrivici via email.",
+  "contact.mailto":   "Apertura dell'app email, premi invia per completare.",
+
   "footer.impressum": "Note legali",
-  "footer.privacy": "Privacy",
+  "footer.privacy":   "Privacy",
+  "footer.rights":    "Germania 2026",
 });
 
 const I18N = { en: EN, de: DE, it: IT };

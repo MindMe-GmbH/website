@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MindMe! — Cognitive Enrichment Platform</title>
-  <meta name="description" content="MindMe! is a touchscreen-based cognitive enrichment and behavioural platform, built on more than a decade of neuroscience research." />
+  <title>MindMe! Cognitive Enrichment for Dogs</title>
+  <meta name="description" content="MindMe! is a touchscreen platform for adaptive cognitive enrichment for dogs, built on more than a decade of neuroscience research." />
   <meta name="theme-color" content="#1A1714" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="MindMe! — Cognitive Enrichment Platform" />
-  <meta property="og:description" content="A touchscreen platform for cognitive and behavioural science, powered by 10+ years of neuroscience research." />
+  <meta property="og:title" content="MindMe! Cognitive Enrichment for Dogs" />
+  <meta property="og:description" content="A touchscreen platform for adaptive cognitive stimulation, built on more than a decade of neuroscience research." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/img/device-hero.png" />
 
@@ -37,8 +37,9 @@
 
       <nav class="nav__links" aria-label="Primary">
         <a href="#about"   data-i18n="nav.about">About</a>
-        <a href="#concept" data-i18n="nav.concept">Concept</a>
+        <a href="#beta"    data-i18n="nav.beta">Beta</a>
         <a href="#team"    data-i18n="nav.team">Team</a>
+        <a href="#concept" data-i18n="nav.concept">Concept</a>
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
@@ -53,10 +54,6 @@
       </button>
     </div>
   </header>
-
-  <!-- translation-pending notices (shown only for DE / IT while body copy is English) -->
-  <div class="i18n-notice i18n-notice--de" role="status">Hinweis: Deutsche Texte folgen — Inhalte werden vorläufig auf Englisch angezeigt.</div>
-  <div class="i18n-notice i18n-notice--it" role="status">Nota: i testi italiani sono in arrivo — i contenuti sono mostrati provvisoriamente in inglese.</div>
 
   <main id="main">
     <!-- ============================== HERO ============================== -->
@@ -73,36 +70,23 @@
       </div>
     </section>
 
-    <!-- ============================== ABOUT ============================== -->
-    <section id="about" class="section">
+    <!-- ============================== ABOUT (device + Lola, capabilities below) ============================== -->
+    <section id="about" class="section section--dark">
       <div class="container">
-        <div class="about__layout">
-          <div class="about__copy reveal">
-            <p class="eyebrow" data-i18n="about.eyebrow">What MindMe! is</p>
-            <h2 data-i18n="about.title">Rigorous science, on a screen an animal actually wants to use.</h2>
-            <p style="margin-top:20px" data-i18n="about.p1">MindMe! is a touchscreen-based cognitive enrichment and behavioural platform.</p>
-            <p data-i18n="about.p2">Built for the home and the lab alike, the device pairs a waterproof touchscreen with an integrated feeder and adaptive software.</p>
-          </div>
+        <p class="eyebrow reveal" data-i18n="caps.eyebrow">Inside the device</p>
+        <div class="product__layout">
+          <figure class="product__device reveal">
+            <picture>
+              <source srcset="assets/img/device-features.webp" type="image/webp" />
+              <img src="assets/img/device-features.png" alt="The MindMe! device: waterproof touchscreen, integrated feeder, AI monitoring, customisable hardware" width="1600" height="1016" loading="lazy" />
+            </picture>
+          </figure>
           <figure class="about__media reveal">
             <video src="assets/video/lola.mp4" poster="assets/img/lola-poster.png"
                    muted loop playsinline autoplay preload="metadata"></video>
-            <figcaption class="about__tag" data-i18n="about.tag">Lola, in action</figcaption>
+            <figcaption class="about__tag" data-i18n="about.tag">Lola in action</figcaption>
           </figure>
         </div>
-      </div>
-    </section>
-
-    <!-- capabilities strip (dark band — white line icons live here) -->
-    <section class="section section--dark" aria-label="Device capabilities">
-      <div class="container">
-        <p class="eyebrow reveal" data-i18n="caps.eyebrow">Inside the device</p>
-        <figure class="caps-figure reveal">
-          <picture>
-            <source srcset="assets/img/device-features.webp" type="image/webp" />
-            <img src="assets/img/device-features.png" alt="Labelled MindMe! device: waterproof touchscreen, feeder, AI monitoring, customisable hardware" width="1600" height="1016" loading="lazy" />
-          </picture>
-          <figcaption data-i18n="caps.figure">One device: waterproof touchscreen, integrated feeder, AI monitoring — fully customisable.</figcaption>
-        </figure>
         <div class="caps">
           <div class="cap reveal">
             <img class="cap__icon" src="assets/img/icon-brain.png" alt="" aria-hidden="true" />
@@ -112,12 +96,12 @@
           <div class="cap reveal">
             <img class="cap__icon" src="assets/img/icon-tracking.png" alt="" aria-hidden="true" />
             <h3 data-i18n="caps.track.t">Performance tracking</h3>
-            <p data-i18n="caps.track.d">Every session is recorded, so you can follow your dog's progress and well-being over time.</p>
+            <p data-i18n="caps.track.d">Every session is recorded, so you can follow your dog's progress and wellbeing over time.</p>
           </div>
           <div class="cap reveal">
             <img class="cap__icon" src="assets/img/icon-selfpaced.png" alt="" aria-hidden="true" />
-            <h3 data-i18n="caps.self.t">Self-paced interaction</h3>
-            <p data-i18n="caps.self.d">Your dog plays whenever they like, at their own pace — no training or handler needed.</p>
+            <h3 data-i18n="caps.self.t">Independent play</h3>
+            <p data-i18n="caps.self.d">Your dog plays whenever they like, at their own pace, with no training or handler needed.</p>
           </div>
         </div>
       </div>
@@ -131,12 +115,11 @@
           <img class="beta__paw" src="assets/img/paw-black.png" alt="" aria-hidden="true" />
         </picture>
         <div class="beta__text reveal">
-          <span class="beta__badge" data-i18n="beta.badge">Current wave full</span>
           <h2 data-i18n="beta.title">Become a beta tester.</h2>
-          <p data-i18n="beta.p">Our current beta wave has reached capacity. Leave your email to reserve a place in the next wave — we'll be in touch when spots open.</p>
+          <p data-i18n="beta.p">Our current beta wave is full. Leave your email to reserve a place in the next wave and we'll be in touch when spots open.</p>
         </div>
         <div class="beta__action reveal">
-          <button class="btn btn--primary" type="button" disabled data-i18n="beta.full">Beta full — applications closed</button>
+          <button class="btn btn--primary" type="button" disabled data-i18n="beta.full">Beta applications closed</button>
           <!-- Waitlist: composes an email to the founders (no backend needed).
                To collect via a Google Form / service later, swap this for that link. -->
           <form id="beta-waitlist" class="beta__waitlist" data-mailto="acalapai@dpz.eu,fschneider@dpz.eu">
@@ -152,13 +135,44 @@
       </div>
     </section>
 
+    <!-- ============================== TEAM ============================== -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="team.eyebrow">The team</p>
+          <h2 data-i18n="team.title">Built by neuroscience</h2>
+        </div>
+        <div class="team__grid">
+          <article class="member reveal">
+            <picture>
+              <source srcset="assets/img/founder-antonino.webp" type="image/webp" />
+              <img class="member__photo" src="assets/img/founder-antonino.jpg" alt="Antonino Calapai" width="88" height="88" loading="lazy" />
+            </picture>
+            <h3 data-i18n="team.anto.name">Antonino Calapai</h3>
+            <p class="member__role" data-i18n="team.anto.role">Cofounder · Neuroscientist</p>
+            <p class="member__bio" data-i18n="team.anto.bio">Neuroscientist specialising in autonomous systems for cognitive and behavioural science.</p>
+          </article>
+          <article class="member reveal">
+            <picture>
+              <source srcset="assets/img/founder-felix.webp" type="image/webp" />
+              <img class="member__photo" src="assets/img/founder-felix.jpg" alt="Felix Schneider" width="88" height="88" loading="lazy" />
+            </picture>
+            <h3 data-i18n="team.felix.name">Felix Schneider</h3>
+            <p class="member__role" data-i18n="team.felix.role">Cofounder · Neuroscientist</p>
+            <p class="member__bio" data-i18n="team.felix.bio">Neuroscientist specialising in social decision making and sensory processing for cognitive and behavioural science.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================== CONCEPT ============================== -->
     <section id="concept" class="section section--paper-2">
       <div class="container">
         <div class="section-head reveal">
           <p class="eyebrow" data-i18n="concept.eyebrow">The concept</p>
-          <h2 data-i18n="concept.title">Watch Felix explain the idea.</h2>
+          <h2 data-i18n="concept.title">Felix explains the idea</h2>
           <p class="lead" data-i18n="concept.lead">Grab a coffee and let Felix walk you through the thinking behind MindMe! in a few minutes.</p>
+          <p class="lead" style="font-size:var(--t-small);margin-top:8px" data-i18n="concept.note">Video narration is in German for now.</p>
         </div>
         <div class="concept__video reveal">
           <video controls preload="none" playsinline
@@ -169,49 +183,14 @@
       </div>
     </section>
 
-    <!-- ============================== TEAM ============================== -->
-    <section id="team" class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow" data-i18n="team.eyebrow">The team</p>
-          <h2 data-i18n="team.title">Built by neuroscientists.</h2>
-          <p class="lead" data-i18n="team.lead">Two researchers building the platform they wished existed.</p>
-        </div>
-        <div class="team__grid">
-          <article class="member reveal">
-            <picture>
-              <source srcset="assets/img/founder-antonino.webp" type="image/webp" />
-              <img class="member__photo" src="assets/img/founder-antonino.jpg" alt="Antonino Calapai" width="88" height="88" loading="lazy" />
-            </picture>
-            <h3 data-i18n="team.anto.name">Antonino Calapai</h3>
-            <p class="member__role" data-i18n="team.anto.role">Co-founder · Neuroscientist</p>
-            <p class="member__bio" data-i18n="team.anto.bio">Neuroscientist specialising in autonomous systems for cognitive and behavioural science.</p>
-          </article>
-          <article class="member reveal">
-            <picture>
-              <source srcset="assets/img/founder-felix.webp" type="image/webp" />
-              <img class="member__photo" src="assets/img/founder-felix.jpg" alt="Felix Schneider" width="88" height="88" loading="lazy" />
-            </picture>
-            <h3 data-i18n="team.felix.name">Felix Schneider</h3>
-            <p class="member__role" data-i18n="team.felix.role">Co-founder · Neuroscientist</p>
-            <p class="member__bio" data-i18n="team.felix.bio">Neuroscientist specialising in social decision-making and sensory processing for cognitive and behavioural science.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ============================== CONTACT ============================== -->
     <section id="contact" class="section section--paper-2">
       <div class="container">
         <div class="contact__layout">
           <div class="contact__aside reveal">
             <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-            <h2 data-i18n="contact.title">Get in touch.</h2>
+            <h2 data-i18n="contact.title">Get in touch</h2>
             <p class="lead" style="margin-top:18px" data-i18n="contact.lead">Questions, partnerships, or press? Send us a note and we'll get back to you.</p>
-            <p style="margin-top:28px;font-weight:600" data-i18n="contact.aside_t">Prefer email?</p>
-            <p class="privacy-note" style="margin:4px 0 12px" data-i18n="contact.aside_p">Reach the founders directly:</p>
-            <a class="mail" style="display:block;font-size:1.15rem;margin-top:6px" href="mailto:acalapai@dpz.eu">acalapai@dpz.eu</a>
-            <a class="mail" style="display:block;font-size:1.15rem;margin-top:6px" href="mailto:fschneider@dpz.eu">fschneider@dpz.eu</a>
           </div>
 
           <!-- To route the form through a service later (Formspree/Web3Forms/Basin),
@@ -245,20 +224,17 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
-        <div class="footer__brand">
-          <picture>
-            <source srcset="assets/img/wordmark-yellow.webp" type="image/webp" />
-            <img src="assets/img/wordmark-yellow.png" alt="MindMe!" width="640" height="155" />
-          </picture>
-        </div>
+        <span class="footer__brand">MindMe!</span>
         <nav class="footer__legal" aria-label="Legal">
           <a href="#" data-i18n="footer.impressum">Impressum</a>
           <a href="#" data-i18n="footer.privacy">Privacy policy</a>
         </nav>
       </div>
       <div class="footer__meta">
-        <span><span data-i18n="footer.tagline">Cognitive Enrichment Platform</span> · <span data-i18n="footer.rights">Germany · 2026</span></span>
-        <span class="placeholder-flag">⚠ Impressum &amp; privacy text pending</span>
+        <span data-i18n="footer.rights">Germany 2026</span>
+        <a class="footer__gh" href="https://github.com/MindMe-GmbH" target="_blank" rel="noopener" aria-label="MindMe on GitHub">
+          <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
       </div>
     </div>
   </footer>
