@@ -18,7 +18,7 @@
   <!-- Fonts: Space Grotesk (display) · IBM Plex Sans (body) · Press Start 2P (pixel accent) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Press+Start+2P&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -61,26 +61,13 @@
   <main id="main">
     <!-- ============================== HERO ============================== -->
     <section id="home" class="hero">
-      <picture>
-        <source srcset="assets/img/paw-yellow.webp" type="image/webp" />
-        <img class="hero__paw" src="assets/img/paw-yellow.png" alt="" aria-hidden="true" />
-      </picture>
       <div class="container hero__inner">
-        <div class="hero__grid">
-          <div class="hero__copy">
-            <p class="hero__kicker" data-i18n="hero.kicker">10+ YEARS OF NEUROSCIENCE RESEARCH</p>
-            <h1 data-i18n="hero.title">The cognitive enrichment <span class="accent">platform.</span></h1>
-            <p class="hero__sub" data-i18n="hero.sub">A touchscreen platform for cognitive and behavioural science — built on more than a decade of neuroscience research.</p>
-            <div class="hero__cta">
-              <a class="btn btn--primary" href="#concept" data-i18n="hero.cta1">Watch the concept</a>
-              <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Contact us</a>
-            </div>
-          </div>
-          <div class="hero__media">
-            <picture>
-              <source srcset="assets/img/device-hero.webp" type="image/webp" />
-              <img src="assets/img/device-hero.png" alt="The MindMe! device — a touchscreen unit with a feeder base" width="1400" height="1051" fetchpriority="high" />
-            </picture>
+        <div class="hero__copy">
+          <h1 data-i18n="hero.title">Cognitive Enrichment for <span class="accent">Dogs</span></h1>
+          <p class="hero__sub" data-i18n="hero.sub">A touchscreen-based, adaptive cognitive stimulation built on more than a decade of neuroscience research.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#concept" data-i18n="hero.cta1">Watch the concept</a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Contact us</a>
           </div>
         </div>
       </div>
@@ -109,23 +96,6 @@
     <section class="section section--dark" aria-label="Device capabilities">
       <div class="container">
         <p class="eyebrow reveal" data-i18n="caps.eyebrow">Inside the device</p>
-        <div class="caps">
-          <div class="cap reveal">
-            <img class="cap__icon" src="assets/img/icon-brain.png" alt="" aria-hidden="true" />
-            <h3 data-i18n="caps.brain.t">Cognitive games</h3>
-            <p data-i18n="caps.brain.d">Self-paced tasks grounded in over a decade of cognitive and behavioural research.</p>
-          </div>
-          <div class="cap reveal">
-            <img class="cap__icon" src="assets/img/icon-tracking.png" alt="" aria-hidden="true" />
-            <h3 data-i18n="caps.track.t">Performance tracking</h3>
-            <p data-i18n="caps.track.d">Every session is measured, so progress and well-being are visible over time.</p>
-          </div>
-          <div class="cap reveal">
-            <img class="cap__icon" src="assets/img/icon-selfpaced.png" alt="" aria-hidden="true" />
-            <h3 data-i18n="caps.self.t">Self-paced interaction</h3>
-            <p data-i18n="caps.self.d">Animals engage voluntarily, at their own rhythm — no handler required.</p>
-          </div>
-        </div>
         <figure class="caps-figure reveal">
           <picture>
             <source srcset="assets/img/device-features.webp" type="image/webp" />
@@ -133,6 +103,23 @@
           </picture>
           <figcaption data-i18n="caps.figure">One device: waterproof touchscreen, integrated feeder, AI monitoring — fully customisable.</figcaption>
         </figure>
+        <div class="caps">
+          <div class="cap reveal">
+            <img class="cap__icon" src="assets/img/icon-brain.png" alt="" aria-hidden="true" />
+            <h3 data-i18n="caps.brain.t">Cognitive games</h3>
+            <p data-i18n="caps.brain.d">Advanced activities developed to rigorous scientific standards, refined over more than a decade of research.</p>
+          </div>
+          <div class="cap reveal">
+            <img class="cap__icon" src="assets/img/icon-tracking.png" alt="" aria-hidden="true" />
+            <h3 data-i18n="caps.track.t">Performance tracking</h3>
+            <p data-i18n="caps.track.d">Every session is recorded, so you can follow your dog's progress and well-being over time.</p>
+          </div>
+          <div class="cap reveal">
+            <img class="cap__icon" src="assets/img/icon-selfpaced.png" alt="" aria-hidden="true" />
+            <h3 data-i18n="caps.self.t">Self-paced interaction</h3>
+            <p data-i18n="caps.self.d">Your dog plays whenever they like, at their own pace — no training or handler needed.</p>
+          </div>
+        </div>
       </div>
     </section>
 

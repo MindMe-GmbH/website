@@ -19,9 +19,8 @@ const EN = {
   "nav.team":    "Team",
   "nav.contact": "Contact",
 
-  "hero.kicker": "10+ YEARS OF NEUROSCIENCE RESEARCH",
-  "hero.title":  'The cognitive enrichment <span class="accent">platform.</span>',
-  "hero.sub":    "A touchscreen platform for cognitive and behavioural science — built on more than a decade of neuroscience research.",
+  "hero.title":  'Cognitive Enrichment for <span class="accent">Dogs</span>',
+  "hero.sub":    "A touchscreen-based, adaptive cognitive stimulation built on more than a decade of neuroscience research.",
   "hero.cta1":   "Watch the concept",
   "hero.cta2":   "Contact us",
 
@@ -33,11 +32,11 @@ const EN = {
 
   "caps.eyebrow":   "Inside the device",
   "caps.brain.t":   "Cognitive games",
-  "caps.brain.d":   "Self-paced tasks grounded in over a decade of cognitive and behavioural research.",
+  "caps.brain.d":   "Advanced activities developed to rigorous scientific standards, refined over more than a decade of research.",
   "caps.track.t":   "Performance tracking",
-  "caps.track.d":   "Every session is measured, so progress and well-being are visible over time.",
+  "caps.track.d":   "Every session is recorded, so you can follow your dog's progress and well-being over time.",
   "caps.self.t":    "Self-paced interaction",
-  "caps.self.d":    "Animals engage voluntarily, at their own rhythm — no handler required.",
+  "caps.self.d":    "Your dog plays whenever they like, at their own pace — no training or handler needed.",
   "caps.figure":    "One device: waterproof touchscreen, integrated feeder, AI monitoring — fully customisable.",
 
   "beta.badge": "Current wave full",
