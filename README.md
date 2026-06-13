@@ -35,11 +35,13 @@ Search the source for these tokens:
 
 | What | Where | Token to replace |
 |------|-------|------------------|
-| **Public Google Form URL** for beta (the `…/viewform`, NOT `…/edit`) | `index.html` Beta button | `PUBLIC_FORM_ID` |
-| **Concept video** (external embed — local file is 122 MB, over GitHub's limit) | `index.html` `.concept__video` | `data-embed="youtube:VIDEO_ID"` → real ID |
 | **Founder photos** | `index.html` Team | `.member__photo--ph` placeholders |
 | **Native DE / IT body copy** | `assets/js/i18n.js` | `DE` / `IT` inherit English — override body keys |
 | **Impressum & privacy text** (legal — Antonino/DPZ) | `index.html` footer | placeholder `#` links |
+
+**Beta section — TODO / on hold:** at capacity for participants, so the Beta CTA band is **commented out** in `index.html`. To re-enable: add the public Google Form URL (`…/viewform`, not `…/edit`) to the button, uncomment the `<section id="beta">` block, and point the hero's primary CTA back to `#beta` ("Apply for the beta"). The hero CTA currently points to `#concept` ("Watch the concept").
+
+**Concept video — done:** self-hosted at `assets/video/concept.mp4` (720p, ~14 MB, re-encoded from the 122 MB source). Native `<video>` player with `concept-poster.webp`.
 
 **Contact:** the form currently emails the founders (`acalapai@dpz.eu`, `fschneider@dpz.eu`) via the visitor's mail app — no third-party service needed. To route it through Formspree/Web3Forms/Basin instead (hides the addresses, no mail-client needed), set `data-endpoint` on the `#contact-form` to the service URL.
 
