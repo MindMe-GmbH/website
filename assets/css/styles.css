@@ -30,7 +30,7 @@
   --font-pixel:   "Press Start 2P", monospace;
 
   /* type scale (fluid) */
-  --t-hero:  clamp(2.1rem, 1rem + 3.4vw, 3.7rem);
+  --t-hero:  clamp(2rem, 1rem + 2.4vw, 3.1rem);
   --t-h2:    clamp(1.9rem, 1.3rem + 2.6vw, 3.1rem);
   --t-h3:    clamp(1.25rem, 1.05rem + .8vw, 1.6rem);
   --t-lead:  clamp(1.05rem, .98rem + .45vw, 1.3rem);
@@ -156,19 +156,20 @@ p { margin: 0; }
    HERO — typographic statement
    ========================================================================= */
 .hero { background: var(--ink); color: var(--paper); }
-.hero__inner {
-  display: flex; align-items: center;
-  min-height: min(76vh, 720px); padding-block: clamp(72px, 11vh, 128px);
+.hero__inner { padding-block: clamp(48px, 7vh, 88px); }
+.hero__grid {
+  display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 72px);
+  align-items: center;
 }
 .hero__copy { max-width: none; }
-.hero h1 { font-size: var(--t-hero); color: var(--paper); white-space: nowrap; }
+.hero h1 { font-size: var(--t-hero); color: var(--paper); }
 .hero h1 .accent { color: var(--yellow); }
 .hero__sub {
   font-size: clamp(1rem, .9rem + .4vw, 1.18rem); color: var(--muted-on-dark);
-  margin-top: 22px; max-width: none;
+  margin-top: 22px; max-width: 44ch;
 }
-@media (max-width: 720px) { .hero h1 { white-space: normal; } }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px; }
+.hero__media { width: 100%; max-width: 420px; justify-self: end; }
 
 /* =========================================================================
    ABOUT  (+ capabilities strip + real-use media)
@@ -182,12 +183,15 @@ p { margin: 0; }
   font-weight: 600; font-size: .8rem; padding: 7px 14px; border-radius: var(--r-pill);
 }
 
-/* product row: device render (left) + Lola video (right) */
-.product__layout {
-  display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(28px, 4vw, 64px);
-  align-items: center;
-}
-.product__device img { width: 100%; }
+/* device render on its own row */
+.device-figure { text-align: center; }
+.device-figure img { margin-inline: auto; max-width: 900px; width: 100%; }
+
+/* bring the hero and the device section closer together */
+#about { padding-top: clamp(36px, 5vw, 72px); }
+
+/* MindMe logo below "Get in touch" */
+.contact__logo { width: 170px; max-width: 55%; height: auto; margin-top: 30px; }
 
 /* capabilities strip on dark */
 .caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: clamp(44px, 6vw, 80px); }
@@ -317,7 +321,8 @@ p { margin: 0; }
     background: var(--paper); border-bottom: 1px solid var(--line); padding: 12px clamp(20px,5vw,48px) 20px; gap: 4px;
   }
   .nav__toggle { display: inline-flex; }
-  .about__layout, .contact__layout, .product__layout { grid-template-columns: 1fr; }
+  .hero__grid, .about__layout, .contact__layout { grid-template-columns: 1fr; }
+  .hero__media { justify-self: stretch; margin-inline: auto; order: -1; }
   .caps { grid-template-columns: 1fr; gap: 32px; }
   .team__grid { grid-template-columns: 1fr; }
 }
