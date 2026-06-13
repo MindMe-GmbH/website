@@ -161,11 +161,11 @@
           <h2 data-i18n="concept.title">Watch Felix explain the idea.</h2>
           <p class="lead" data-i18n="concept.lead">Grab a coffee and let Felix walk you through the thinking behind MindMe! in a few minutes.</p>
         </div>
-        <div class="concept__video reveal" data-embed="youtube:VIDEO_ID">
-          <div class="concept__placeholder">
-            <span class="px">▶ PAWRETRO</span>
-            <p data-i18n="concept.placeholder">Concept video goes here — add a YouTube or Vimeo ID to the data-embed attribute in index.html to activate it.</p>
-          </div>
+        <div class="concept__video reveal">
+          <video controls preload="none" playsinline
+                 poster="assets/img/concept-poster.webp" width="1280" height="720">
+            <source src="assets/video/concept.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
