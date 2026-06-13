@@ -162,6 +162,26 @@
     }
   }
 
+  /* ---------- beta waitlist (email → mail app, no backend) ---------- */
+  function initBetaWaitlist() {
+    var form = document.getElementById("beta-waitlist");
+    if (!form) return;
+    var status = form.querySelector(".form-status");
+    var mailto = form.getAttribute("data-mailto") || "";
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var hp = form.querySelector('input[name="_gotcha"]');
+      if (hp && hp.value) return; // bot
+      if (form.reportValidity && !form.reportValidity()) return;
+      var email = (form.querySelector('[name="email"]') || {}).value || "";
+      var subject = "MindMe! beta waitlist — next wave";
+      var body = "Please reserve a spot for the next beta wave.\n\nEmail: " + email;
+      window.location.href = "mailto:" + mailto +
+        "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      if (status) { status.textContent = I18N[curLang()]["beta.wl_ok"]; status.className = "form-status is-ok"; }
+    });
+  }
+
   function curLang() { return document.body.getAttribute("data-lang") || I18N_DEFAULT; }
 
   /* ---------- boot ---------- */
@@ -175,5 +195,6 @@
     initReveal();
     initConceptVideo();
     initContactForm();
+    initBetaWaitlist();
   });
 })();

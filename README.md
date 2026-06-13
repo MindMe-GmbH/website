@@ -39,7 +39,7 @@ Search the source for these tokens:
 | **Native DE / IT body copy** | `assets/js/i18n.js` | `DE` / `IT` inherit English — override body keys |
 | **Impressum & privacy text** (legal — Antonino/DPZ) | `index.html` footer | placeholder `#` links |
 
-**Beta section — TODO / on hold:** at capacity for participants, so the Beta CTA band is **commented out** in `index.html`. To re-enable: add the public Google Form URL (`…/viewform`, not `…/edit`) to the button, uncomment the `<section id="beta">` block, and point the hero's primary CTA back to `#beta` ("Apply for the beta"). The hero CTA currently points to `#concept` ("Watch the concept").
+**Beta section — waitlist mode:** at capacity, so the band shows a "Current wave full" badge, a **disabled** apply button, and an **email waitlist** for the next wave. The waitlist composes an email to the founders (same mail-app approach as the contact form). When the next wave opens, re-enable the apply button (remove `disabled`, point it at the public Google Form `…/viewform` URL) — the form/service for the waitlist itself is a later TODO. Hero primary CTA currently points to `#concept` ("Watch the concept").
 
 **Concept video — done:** self-hosted at `assets/video/concept.mp4` (720p, ~14 MB, re-encoded from the 122 MB source). Native `<video>` player with `concept-poster.webp`.
 

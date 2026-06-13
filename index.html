@@ -136,11 +136,7 @@
       </div>
     </section>
 
-    <!-- ============================== BETA (CTA band) ==============================
-         TEMPORARILY HIDDEN (2026-06-13): at capacity for beta participants.
-         TODO to re-enable: (1) put the PUBLIC Google Form URL (…/viewform, NOT …/edit)
-         in the button's href below, (2) uncomment this section, (3) point the hero's
-         primary CTA back to "#beta" with the hero.cta1 string "Apply for the beta".
+    <!-- ============================== BETA (waitlist — current wave full) ============================== -->
     <section id="beta" class="section beta">
       <div class="container beta__inner">
         <picture>
@@ -148,15 +144,26 @@
           <img class="beta__paw" src="assets/img/paw-black.png" alt="" aria-hidden="true" />
         </picture>
         <div class="beta__text reveal">
+          <span class="beta__badge" data-i18n="beta.badge">Current wave full</span>
           <h2 data-i18n="beta.title">Become a beta tester.</h2>
-          <p data-i18n="beta.p">We're inviting a small group of owners and researchers to trial MindMe! before launch. Applications run through our short online form.</p>
-          <p style="margin-top:10px;font-size:.85rem;opacity:.7" data-i18n="beta.note">Beta applications are handled via Google Forms.</p>
+          <p data-i18n="beta.p">Our current beta wave has reached capacity. Leave your email to reserve a place in the next wave — we'll be in touch when spots open.</p>
         </div>
-        <a class="btn btn--primary" href="PUBLIC_FORM_ID_GOES_HERE"
-           target="_blank" rel="noopener" data-i18n="beta.cta">Apply to the beta program</a>
+        <div class="beta__action reveal">
+          <button class="btn btn--primary" type="button" disabled data-i18n="beta.full">Beta full — applications closed</button>
+          <!-- Waitlist: composes an email to the founders (no backend needed).
+               To collect via a Google Form / service later, swap this for that link. -->
+          <form id="beta-waitlist" class="beta__waitlist" data-mailto="acalapai@dpz.eu,fschneider@dpz.eu">
+            <label for="wl-email" data-i18n="beta.wl_label">Reserve a spot for the next wave</label>
+            <div class="beta__waitlist-row">
+              <input id="wl-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              <button class="btn btn--primary" type="submit" data-i18n="beta.wl_btn">Reserve my spot</button>
+            </div>
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
-    ============================================================================= -->
 
     <!-- ============================== CONCEPT ============================== -->
     <section id="concept" class="section section--paper-2">
