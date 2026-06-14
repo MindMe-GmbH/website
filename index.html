@@ -7,11 +7,16 @@
   <meta name="description" content="MindMe! is a touchscreen platform for adaptive cognitive enrichment for dogs, built on more than a decade of neuroscience research." />
   <meta name="theme-color" content="#1A1714" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / share card -->
   <meta property="og:title" content="MindMe! Cognitive Enrichment for Dogs" />
   <meta property="og:description" content="A touchscreen platform for adaptive cognitive stimulation, built on more than a decade of neuroscience research." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/device-hero.png" />
+  <meta property="og:url" content="https://mindme-gmbh.github.io/website/" />
+  <meta property="og:image" content="https://mindme-gmbh.github.io/website/assets/img/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://mindme-gmbh.github.io/website/assets/img/og-card.png" />
 
   <link rel="icon" href="assets/img/paw-yellow.png" type="image/png" />
 
@@ -114,7 +119,7 @@
           <img class="beta__paw" src="assets/img/paw-black.png" alt="" aria-hidden="true" />
         </picture>
         <div class="beta__text reveal">
-          <h2 data-i18n="beta.title">Become a beta tester.</h2>
+          <h2 data-i18n="beta.title">Become a beta tester</h2>
           <p data-i18n="beta.p">Our current beta wave is full. Leave your email to reserve a place in the next wave and we'll be in touch when spots open.</p>
         </div>
         <div class="beta__action reveal">
@@ -138,7 +143,6 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow" data-i18n="team.eyebrow">The team</p>
           <h2 data-i18n="team.title">Built by neuroscience</h2>
         </div>
         <div class="team__grid">
@@ -190,10 +194,6 @@
             <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
             <h2 data-i18n="contact.title">Get in touch</h2>
             <p class="lead" style="margin-top:18px" data-i18n="contact.lead">Questions, partnerships, or press? Send us a note and we'll get back to you.</p>
-            <picture>
-              <source srcset="assets/img/mindme-logo.webp" type="image/webp" />
-              <img class="contact__logo" src="assets/img/mindme-logo.png" alt="MindMe!" width="180" loading="lazy" />
-            </picture>
           </div>
 
           <!-- To route the form through a service later (Formspree/Web3Forms/Basin),
@@ -218,6 +218,11 @@
             <p class="form-status" role="status" aria-live="polite"></p>
             <p class="privacy-note" data-i18n="contact.privacy">Your details are stored securely and used only to respond to your message. A full privacy policy will follow.</p>
           </form>
+
+          <picture class="contact__logo-wrap reveal">
+            <source srcset="assets/img/mindme-logo.webp" type="image/webp" />
+            <img class="contact__logo" src="assets/img/mindme-logo.png" alt="MindMe!" width="255" loading="lazy" />
+          </picture>
         </div>
       </div>
     </section>

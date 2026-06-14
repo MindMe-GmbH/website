@@ -29,7 +29,7 @@ const EN = {
 
   "about.tag": "Lola in action",
 
-  "beta.title": "Become a beta tester.",
+  "beta.title": "Become a beta tester",
   "beta.p":     "Our current beta wave is full. Leave your email to reserve a place in the next wave and we'll be in touch when spots open.",
   "beta.full":  "Beta applications closed",
   "beta.wl_label": "Reserve a spot for the next wave",
@@ -90,7 +90,7 @@ const DE = Object.assign({}, EN, {
 
   "about.tag": "Lola in Aktion",
 
-  "beta.title": "Werde Beta Tester.",
+  "beta.title": "Werde Beta Tester",
   "beta.p":     "Unsere aktuelle Beta Runde ist voll. Hinterlasse deine E-Mail, um einen Platz in der nächsten Runde zu reservieren, und wir melden uns, sobald Plätze frei werden.",
   "beta.full":  "Beta Anmeldung geschlossen",
   "beta.wl_label": "Platz für die nächste Runde reservieren",
@@ -149,7 +149,7 @@ const IT = Object.assign({}, EN, {
 
   "about.tag": "Lola in azione",
 
-  "beta.title": "Diventa beta tester.",
+  "beta.title": "Diventa beta tester",
   "beta.p":     "L'attuale fase beta è al completo. Lascia la tua email per riservare un posto nella prossima fase e ti contatteremo quando si libereranno posti.",
   "beta.full":  "Iscrizioni beta chiuse",
   "beta.wl_label": "Riserva un posto per la prossima fase",

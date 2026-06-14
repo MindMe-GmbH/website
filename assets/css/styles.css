@@ -156,7 +156,7 @@ p { margin: 0; }
    HERO — typographic statement
    ========================================================================= */
 .hero { background: var(--ink); color: var(--paper); }
-.hero__inner { padding-block: clamp(48px, 7vh, 88px); }
+.hero__inner { padding-top: clamp(8px, 2vh, 28px); padding-bottom: clamp(48px, 7vh, 88px); }
 .hero__grid {
   display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px, 5vw, 72px);
   align-items: center;
@@ -179,8 +179,9 @@ p { margin: 0; }
 .about__media { position: relative; border-radius: var(--r-card); overflow: hidden; box-shadow: var(--shadow); background: #000; }
 .about__media video, .about__media img { width: 100%; display: block; aspect-ratio: 4 / 5; object-fit: cover; }
 .about__tag {
-  position: absolute; left: 14px; bottom: 14px; background: var(--yellow); color: var(--ink);
-  font-weight: 600; font-size: .8rem; padding: 7px 14px; border-radius: var(--r-pill);
+  position: absolute; left: 16px; bottom: 14px; background: none; color: #fff;
+  font-weight: 500; font-style: italic; font-size: .82rem; letter-spacing: .02em;
+  padding: 0; border-radius: 0; text-shadow: 0 1px 6px rgba(0,0,0,.75);
 }
 
 /* device render on its own row */
@@ -190,9 +191,8 @@ p { margin: 0; }
 /* bring the device up closer to the top of the section */
 #about { padding-top: clamp(8px, 2vw, 24px); }
 
-/* MindMe logo below "Get in touch", centred in the column */
-.contact__aside picture { display: block; }
-.contact__logo { display: block; width: 255px; max-width: 80%; height: auto; margin: 32px auto 0; }
+/* MindMe logo: under "Get in touch" on desktop, last on mobile */
+.contact__logo { display: inline-block; width: 255px; max-width: 80%; height: auto; }
 
 /* capabilities strip on dark */
 .caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 56px); margin-top: clamp(28px, 4vw, 52px); }
@@ -274,7 +274,10 @@ p { margin: 0; }
 /* =========================================================================
    CONTACT
    ========================================================================= */
-.contact__layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(32px, 5vw, 72px); }
+.contact__layout { display: grid; grid-template-columns: .9fr 1.1fr; column-gap: clamp(32px, 5vw, 72px); row-gap: 28px; align-items: start; }
+.contact__layout .contact__aside { grid-column: 1; grid-row: 1; }
+.contact__layout #contact-form { grid-column: 2; grid-row: 1 / span 2; }
+.contact__layout .contact__logo-wrap { grid-column: 1; grid-row: 2; text-align: center; }
 .field { display: flex; flex-direction: column; gap: 7px; margin-bottom: 18px; }
 .field label { font-weight: 600; font-size: var(--t-small); }
 .field input, .field textarea {
@@ -327,7 +330,11 @@ p { margin: 0; }
   }
   .nav__toggle { display: inline-flex; }
   .hero__grid, .about__layout, .contact__layout { grid-template-columns: 1fr; }
-  .hero__media { justify-self: stretch; margin-inline: auto; order: -1; }
+  .hero__media { justify-self: stretch; margin-inline: auto; }
+  /* contact: stack aside, form, then logo last */
+  .contact__layout .contact__aside,
+  .contact__layout #contact-form,
+  .contact__layout .contact__logo-wrap { grid-column: 1; grid-row: auto; }
   .caps { grid-template-columns: 1fr; gap: 32px; }
   .team__grid { grid-template-columns: 1fr; }
 }
