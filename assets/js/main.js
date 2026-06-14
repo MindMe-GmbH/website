@@ -5,6 +5,16 @@
 (function () {
   "use strict";
 
+  /* ---------- always open at the top ----------
+     Mobile browsers restore the previous scroll position on reload/return, which
+     can drop visitors mid-page (e.g. on the device render). Disable that and pin
+     to the top on load, unless the URL points at a specific section (#concept). */
+  try { if ("scrollRestoration" in history) history.scrollRestoration = "manual"; } catch (e) {}
+  if (!window.location.hash) {
+    window.scrollTo(0, 0);
+    window.addEventListener("load", function () { if (!window.location.hash) window.scrollTo(0, 0); });
+  }
+
   /* ---------- safe storage (site must work if storage is blocked) ---------- */
   var STORE_KEY = "mindme.lang";
   function readLang() {
