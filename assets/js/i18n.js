@@ -75,16 +75,16 @@ const DE = Object.assign({}, EN, {
   "nav.concept": "Konzept",
   "nav.contact": "Kontakt",
 
-  "hero.title":  'Kognitive Förderung für <span class="accent">Hunde</span>',
+  "hero.title":  'Kognitive Bereicherung für <span class="accent">Hunde</span>',
   "hero.sub":    "Eine Touchscreen Plattform für adaptive kognitive Stimulation, basierend auf über einem Jahrzehnt neurowissenschaftlicher Forschung.",
   "hero.cta1":   "Konzept ansehen",
   "hero.cta2":   "Kontakt",
 
-  "caps.eyebrow":   "Das Gerät",
+  "caps.eyebrow":   "Unser Gerät",
   "caps.brain.t":   "Kognitive Spiele",
   "caps.brain.d":   "Anspruchsvolle Aktivitäten nach strengen wissenschaftlichen Standards, verfeinert über mehr als ein Jahrzehnt Forschung mit Primaten.",
-  "caps.track.t":   "Fortschrittskontrolle",
-  "caps.track.d":   "Jede Sitzung wird aufgezeichnet, sodass du die Fortschritte und das Wohlbefinden deines Hundes über die Zeit verfolgen kannst.",
+  "caps.track.t":   "Performance tracking",
+  "caps.track.d":   "Jede Sitzung wird aufgezeichnet, sodass du die Fortschritte und das Wohlbefinden deines Hundes verfolgen kannst.",
   "caps.self.t":    "Eigenständiges Spielen",
   "caps.self.d":    "Adaptive Spiele, die dein Hund spielt wann immer er möchte, in seinem eigenen Tempo, ganz ohne Training oder Betreuung.",
 
@@ -99,14 +99,14 @@ const DE = Object.assign({}, EN, {
 
   "concept.eyebrow": "Das Konzept",
   "concept.title":   "Felix erklärt die Idee",
-  "concept.lead":    "Hol dir einen Kaffee und lass dir von Felix den Gedanken hinter MindMe! erklären.",
+  "concept.lead":    "Hol dir einen Kaffee und lass dir von Felix die Motivation hinter MindMe! erklären.",
   "concept.note":    "Die Videovertonung ist vorerst nur auf Deutsch.",
 
   "team.eyebrow": "Das Team",
-  "team.title":   "Auf Neurowissenschaft gebaut",
-  "team.anto.role": "Mitgründer",
+  "team.title":   "Von Neurowissenschaftlern entwickelt",
+  "team.anto.role": "Gründer",
   "team.anto.bio":  "Neurowissenschaftler mit Schwerpunkt auf autonomen Systemen für die kognitive und verhaltensbezogene Forschung.",
-  "team.felix.role": "Mitgründer",
+  "team.felix.role": "Gründer",
   "team.felix.bio":  "Neurowissenschaftler mit Schwerpunkt auf sozialer Entscheidungsfindung und sensorischer Verarbeitung für die kognitive und verhaltensbezogene Forschung.",
 
   "contact.eyebrow":  "Kontakt",
